@@ -21,7 +21,7 @@
     }
     &-light {
         @extend %btn-shared;
-        color: #333;
+        color: #333; 
         background-color: $light-color;
     }
     &-dark {
@@ -33,7 +33,9 @@
     }
 }
 
-.btn-light:hover {
+a[class*="btn-"]:hover, 
+button[class*="btn-"]:hover, 
+input[class*="btn-"]:hover {
     background-color: $primary-color;
 } 
 

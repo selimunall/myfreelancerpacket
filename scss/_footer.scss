@@ -1,0 +1,17 @@
+#main-footer {
+    background-color: $dark-color;
+    color: #fff;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .social{
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+    }
+} 

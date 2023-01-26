@@ -53,4 +53,9 @@
             display: block;
         }
     }
+
+    &__inner {
+        background: $bg-image no-repeat 100% 20% /cover;
+        height: 5.5rem;
+    }
 }
