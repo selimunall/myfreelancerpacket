@@ -1,0 +1,155 @@
+//tablets
+@media (max-width: 768px) {
+    #header {
+        &__home {
+            height: 30rem;
+
+            .header-content {
+                padding-top: 7rem;
+
+                h1 {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+
+    }
+
+    #home {
+        &__a {
+            .skills {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        &__b {
+
+            .profile {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        &__c {
+
+            .process {
+                grid-template-columns: repeat(2,1fr);  
+            }
+        }   
+    }
+
+    #main {
+
+        .blog {
+            margin: 1rem 0;
+            grid-template-columns: 1fr;
+            gap: 0px;
+        }
+    }
+
+    #about {
+
+        .logos {
+            grid-template-columns: repeat( 2 , 1fr);            
+        }
+    }
+
+    #projects {
+        .items {
+            grid-template-columns: repeat(2,1fr);    
+        }
+    }
+
+}
+
+
+//more small
+@media (max-width: 576px) {
+    #header {
+        &__home {
+            height: 10rem;
+            border: 2px solid $primary-color;
+            .header-content {
+               display: none;
+            }
+            .main-nav {
+                display: block;
+                text-align: center;
+                &__items {
+                    justify-content: space-around;
+                }
+            }
+        }
+
+        &__inner {
+            height: 10rem;
+            .main-nav {
+                display: block;
+                text-align: center;
+                &__items {
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    #home {
+        &__a {
+            .skills {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        &__b {
+
+            .profile {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        &__c {
+
+            .process {
+                grid-template-columns: repeat(1,1fr);  
+            }
+        }
+
+    }
+
+    #about {
+
+        .logos {
+            grid-template-columns: repeat( 1 , 1fr);
+        }
+    }
+
+    #projects {
+        .items {
+            grid-template-columns: repeat(1,1fr);   
+        }
+    }
+ 
+    #main-footer {
+        .footer-content {
+            display: block;
+            text-align: center;
+            .social{
+                font-size: 1.5rem;
+                margin-right: 0;
+            }
+        }
+    }
+
+    #contact {
+
+        .form-fields {
+            display: grid;
+            grid-template-areas: 
+                'name name'
+                'email email'  
+                'subject subject'
+                'number number'
+                'message message'
+                'button button';
+
+        }
+
+    }
+
+}

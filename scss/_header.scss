@@ -11,6 +11,7 @@
 
     &__items {
         display: flex;
+        
         li {
             padding: 1rem 1.5rem;
 
@@ -35,7 +36,7 @@
 
 #header {
     &__home {
-        background: $bg-image no-repeat center right/cover;
+        background: $bg-image no-repeat 100% 10% / cover;
         height: 100vh;
         color: #fff;
 
@@ -51,11 +52,12 @@
 
         .typewrite {
             display: block;
-        }
+        } 
     }
 
     &__inner {
-        background: $bg-image no-repeat 100% 20% /cover;
+        background: $bg-image no-repeat 100% 10% / cover;
         height: 5.5rem;
+        border-bottom: 3px solid $primary-color;
     }
 }

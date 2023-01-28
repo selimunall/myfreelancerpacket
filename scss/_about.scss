@@ -1,0 +1,81 @@
+#main {
+
+    .blog {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        padding: 10px;
+
+        img {
+            border: 1px solid $light-color;
+        }
+        
+        .blog-right {
+            background-color: $light-color;
+            padding: 10px;
+            .blod {
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+} 
+
+#know {
+    color: white;
+
+    .progress-bars {
+
+        .progress {
+            height: 20px;
+            background-color: $medium-color;
+            border-radius: 5px;
+
+            div {
+                height: 100%;
+                background-color: $primary-color;
+                border-radius: 5px;
+
+            }
+        }
+    }
+}
+
+#about {
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat( 4 , 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+#references {
+    .references {
+        ul {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            border: 1px solid $medium-color;
+            border-radius:5px;
+            padding: .5rem;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+}

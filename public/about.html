@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link
     rel="stylesheet"
@@ -29,6 +30,101 @@
         </div>
     </header>
 
+    <!-- main -->
+    <section id="main" class="text-center">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates iure beatae error!</p>
+            <div class="blog">
+                <img src="img/about.jpeg" alt="">
+                <div class="blog-right">
+                    <p class="lead blod">Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dolore iusto omnis cumque dignissimos saepe quaerat. Praesentium maiores facere qui. Recusandae molestiae accusantium, molestias ullam soluta facilis quas fugiat?</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- what i know -->
+    <section id="know" class="bg-dark py-2">
+        <div class="container">
+            <h2 class="section-title">what i know</h2>
+            <div class="border-bottom"></div>
+            <div class="progress-bars">
+                <h4>Web Development</h4>
+                <div class="progress">
+                    <div style="width: 100%;"></div>
+                </div>
+                <h4>Mobil App Development</h4>
+                <div class="progress">
+                    <div style="width: 80%;"></div>
+                </div>
+                <h4>Data Science</h4>
+                <div class="progress">
+                    <div style="width: 90%;"></div>
+                </div>
+                <h4>Machine Learning</h4>
+                <div class="progress">
+                    <div style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="bg-light py-2">
+        <div class="container">
+            <div class="logos">
+                <img src="img/joomla.png" alt="">
+                <img src="img/woocommerce.png" alt="">
+                <img src="img/wordpress.png" alt="">
+                <img src="img/wix.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- references -->
+    <section id="references">
+        <div class="container">
+            <h2 class="section-title">references</h2>
+            <div class="border-bottom my-1"></div>
+            <p class="lead text-center my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto libero consequatur dignissimos sed accusamus.</p>
+            <div class="references owl-carousel owl-theme">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab voluptatem veritatis facere! Odio facilis minima sed, architecto mollitia et?</p>
+                    <ul>
+                        <li><img src="img/user-1.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab voluptatem veritatis facere! Odio facilis minima sed, architecto mollitia et?</p>
+                    <ul>
+                        <li><img src="img/user-2.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab voluptatem veritatis facere! Odio facilis minima sed, architecto mollitia et?</p>
+                    <ul>
+                        <li><img src="img/user-3.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab voluptatem veritatis facere! Odio facilis minima sed, architecto mollitia et?</p>
+                    <ul>
+                        <li><img src="img/user-4.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- footer -->
     <section id="main-footer">
         <div class="footer-content container">
@@ -42,5 +138,27 @@
             </div>
         </div>
     </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 </body>
 </html>
