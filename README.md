@@ -1,2 +1,2 @@
 # freelancer
-Örnek kişisel blog web sayfası.
+Personal web site 
